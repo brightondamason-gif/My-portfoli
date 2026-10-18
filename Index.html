@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brighton | Frontend Developer</title>
+    <style>
+        /* Reset Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation Header */
+        header {
+            background-color: #1e293b;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        .nav-btn {
+            background-color: #38bdf8;
+            color: #0f172a !important;
+            border-radius: 4px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #1e293b, #0f172a);
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .hero h2 {
+            font-size: 20px;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .primary-btn {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+
+        .secondary-btn {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        /* Sections */
+        .section {
+            padding: 35px 20px;
+            text-align: center;
+            border-top: 1px solid #334155;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .section-text {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        /* Skills Cards */
+        .skill-box {
+            background-color: #1e293b;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #38bdf8;
+            text-align: left;
+        }
+
+        .skill-box h3 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .skill-box p {
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #020617;
+            color: #64748b;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Brighton<span>.dev</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="nav-btn">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Main Hero -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm Brighton 👋</h1>
+        <h2>Frontend Web Developer</h2>
+        <p>I build clean, responsive, and modern websites using HTML5 and CSS3.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn primary-btn">Hire Me</a>
+            <a href="#skills" class="btn secondary-btn">View Skills</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">I am a passionate frontend developer focused on writing clean code and creating beautiful, fast-loading web pages for clients globally.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2 class="section-title">My Skills & Expertise</h2>
+        
+        <div class="skill-box">
+            <h3>HTML5</h3>
+            <p>Clean semantic markup and web accessibility standard practices.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>CSS3 Layouts</h3>
+            <p>Modern styling, colors, and responsive layouts for mobile screens.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Responsive Web Design</h3>
+            <p>Ensuring websites look perfect on both phones and computers.</p>
+        </div>
+
+        <div class="skill-box">
+            <h3>Git & GitHub</h3>
+            <p>Managing codebase versioning and deploying web projects online.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-text" style="margin-bottom: 15px;">Looking for a frontend web developer? Let's connect!</p>
+        <a href="mailto:brighton@example.com" class="btn primary-btn">Send Email</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Brighton. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
